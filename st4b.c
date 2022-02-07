@@ -17,7 +17,7 @@ main(int argc, char **argv) {
 		apm_run(&bats, &cpus);
 		time_run(&times);
 		iface_run(&ifaces);
-		fprintf(stdout, "%%{l}%5$s%%{c}%4$s%%{r}%3$s%1$s%2$s\n", SEP, cpus, bats, times, ifaces);
+		fprintf(stdout, FMTOUT, SEP, cpus, bats, times, ifaces);
 		free(bats);
 		free(cpus);
 		free(times);
