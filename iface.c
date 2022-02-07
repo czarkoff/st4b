@@ -19,7 +19,7 @@ void piface(char *, char *, char *);
 void getsock();
 
 void
-iface_run(char ** out)
+iface_run(char **out)
 {
 	char buf[MAXLEN];
 	char all[MAXLEN];

@@ -3,7 +3,7 @@
 #include "config.h"
 
 void
-time_run(char ** out)
+time_run(char **out)
 {
 	char buf[MAXLEN];
 	time_t now;

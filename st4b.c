@@ -10,7 +10,7 @@ void time_run(char **);
 void iface_run(char **);
 
 int
-main(int argc, char ** argv) {
+main(int argc, char **argv) {
 	char *cpus, *bats, *times, *ifaces;
 
 	while (1) {
