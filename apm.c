@@ -140,11 +140,11 @@ batcolor(char *color, int bst, int ast, int est)
 			return;
 		}
 	}
-	if (c1r != c2r)
-		c1r -= (c1r - c2r) * est / 100;
-	if (c1g != c2g)
-		c1g -= (c1g - c2g) * est / 100;
-	if (c1b != c2b)
-		c1b -= (c1b - c2b) * est / 100;
-	snprintf(color, CLEN, "%%{F#%2X%2X%2X}", c1r, c1g, c1b);
+	if (c2r != c1r)
+		c2r -= (c2r - c1r) * est / 100;
+	if (c2g != c1g)
+		c2g -= (c2g - c1g) * est / 100;
+	if (c2b != c1b)
+		c2b -= (c2b - c1b) * est / 100;
+	snprintf(color, CLEN, "%%{F#%2X%2X%2X}", c1r, c2g, c2b);
 }
